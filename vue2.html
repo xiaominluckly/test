@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script src="js_bag/vue.js"></script>
+<body>
+<div id="demo">
+  <button v-on:click="show = !show">
+    Toggle
+  </button>
+  <transition name="fade">
+    <p v-if="show">hello</p>
+  </transition>
+</div>
+</body>
+
+</html>
+<script>
+new Vue({
+  el: '#demo',
+  data: {
+    show: true
+  }
+});
+    
+</script>

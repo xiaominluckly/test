@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script src="js_bag/vue.js"></script>
+<body>
+<ul id="v-for-object" class="demo">
+  <li v-for="(value,key,index) of object">
+    {{index+1}} {{ key }}:{{ value	}}
+  </li>
+</ul>
+</body>
+   
+</html>
+<script>
+new Vue({
+	  el: '#v-for-object',
+	  data: {
+	      object: {
+	      firstName: 'John',
+	      lastName: 'Doe',
+	      age: 30
+    }
+  }
+});
+    console.log(example1.items.push({ message: 'Baz' }));
+</script>
